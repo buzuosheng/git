@@ -14,5 +14,7 @@
 - 从库修改文件，不执行commit命令，直接执行pull命令
 - ![image-20220120001904694](readme/image-20220120001904694.png)
 - pull操作被终止，需要在merge之前先执行commit或stash命令
-- 从库执行git stash命令，控制台信息`Saved working directory and index state WIP on main`
-- 从库执行pull操作
+- 从库执行`git stash`命令，储藏文件，控制台信息`Saved working directory and index state WIP on main`
+- 从库执行pull操作，拉取成功，执行`git stash pop`命令恢复储藏的文件
+- 从库readme文件冲突，将冲突部分处理，从库得到最新代码，push到远程，远程仓库得到最新代码，第二次实验结束
+
